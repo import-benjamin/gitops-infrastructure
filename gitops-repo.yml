@@ -5,9 +5,9 @@ metadata:
 spec:
   project: default
   source:
-    path: argocd/
+    path: components/
     repoURL: https://github.com/benjaminBoboul/gitops-infrastructure.git
     targetRevision: HEAD
   destination:
-    namespace: argocd
+    namespace: product
     server: https://kubernetes.default.svc
