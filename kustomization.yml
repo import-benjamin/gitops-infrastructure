@@ -10,3 +10,6 @@ resources:
 patches:
   - argo-cd-repo-server-ksops-patch.yml
   - argo-cd-allow-alpha-plugins-patch.yml
+  - argo-cd-import-pgp-key.yml
+generators:
+  - secret-generator.yml

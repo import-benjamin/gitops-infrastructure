@@ -18,3 +18,9 @@ POC of gitops infrastructure using kubernetes, argo-cd and ksops
 🏄  Done! kubectl is now configured to use "minikube" cluster and "default" namespace by default
 [benjamin@fedora gitops-infrastructure]$ kubectl apply -k .
 ```
+
+This kustomize :
+1. Install `argo-cd`
+1. Register this repo as an application
+1. Patch `argo-cd` to use `ksops` within `kustomize`
+1. Load encryption/decryption key to use with `ksops`
